@@ -1,0 +1,11 @@
+# ninja log v5
+1	2236	1732947220536837095	CMakeFiles/test.dir/src/Light/Light.cpp.o	d6546071ce99a7f6
+4	2346	1732947220650098804	CMakeFiles/test.dir/src/armor_detector/show.cpp.o	810647a88119fb45
+3574	4074	1732947222372695714	test	5686b36ed34fa336
+2	2362	1732947220666135860	CMakeFiles/test.dir/src/armor_detector/matchArmor.cpp.o	229f9ec67813a58
+1	2783	1732947221087089151	CMakeFiles/test.dir/src/Armor/Armor.cpp.o	532c48de3ab2f112
+3	3435	1732947221738447003	CMakeFiles/test.dir/src/armor_detector/matchLight.cpp.o	8bd422a5f2756b3f
+4	3574	1732947221877737374	CMakeFiles/test.dir/src/armor_detector/readDealCheck.cpp.o	fc8418c24c57d176
+2	3037	1732947221340617669	CMakeFiles/test.dir/src/armor_detector/detectLight.cpp.o	b03e43d94c62e4c
+2	3209	1732947221512976977	CMakeFiles/test.dir/src/armor_detector/draw.cpp.o	bee10ebe38429461
+0	3406	1732947221709386422	CMakeFiles/test.dir/main.cpp.o	58efa990b1cc8f0e
