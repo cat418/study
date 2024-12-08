@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/home/xzq/project/detectEnergyStation/build",
+  "command": "/usr/bin/g++ -I/home/xzq/project/detectEnergyStation/include -isystem /usr/include/opencv4 -g -std=gnu++11 -o CMakeFiles/test.dir/main.cpp.o -c /home/xzq/project/detectEnergyStation/main.cpp",
+  "file": "/home/xzq/project/detectEnergyStation/main.cpp"
+},
+{
+  "directory": "/home/xzq/project/detectEnergyStation/build",
+  "command": "/usr/bin/g++ -I/home/xzq/project/detectEnergyStation/include -isystem /usr/include/opencv4 -g -std=gnu++11 -o CMakeFiles/test.dir/src/Detect/detec.cpp.o -c /home/xzq/project/detectEnergyStation/src/Detect/detec.cpp",
+  "file": "/home/xzq/project/detectEnergyStation/src/Detect/detec.cpp"
+},
+{
+  "directory": "/home/xzq/project/detectEnergyStation/build",
+  "command": "/usr/bin/g++ -I/home/xzq/project/detectEnergyStation/include -isystem /usr/include/opencv4 -g -std=gnu++11 -o CMakeFiles/test.dir/src/Detect/detectContours.cpp.o -c /home/xzq/project/detectEnergyStation/src/Detect/detectContours.cpp",
+  "file": "/home/xzq/project/detectEnergyStation/src/Detect/detectContours.cpp"
+},
+{
+  "directory": "/home/xzq/project/detectEnergyStation/build",
+  "command": "/usr/bin/g++ -I/home/xzq/project/detectEnergyStation/include -isystem /usr/include/opencv4 -g -std=gnu++11 -o CMakeFiles/test.dir/src/Detect/readAndDeal.cpp.o -c /home/xzq/project/detectEnergyStation/src/Detect/readAndDeal.cpp",
+  "file": "/home/xzq/project/detectEnergyStation/src/Detect/readAndDeal.cpp"
+},
+{
+  "directory": "/home/xzq/project/detectEnergyStation/build",
+  "command": "/usr/bin/g++ -I/home/xzq/project/detectEnergyStation/include -isystem /usr/include/opencv4 -g -std=gnu++11 -o CMakeFiles/test.dir/src/Detect/show.cpp.o -c /home/xzq/project/detectEnergyStation/src/Detect/show.cpp",
+  "file": "/home/xzq/project/detectEnergyStation/src/Detect/show.cpp"
+},
+{
+  "directory": "/home/xzq/project/detectEnergyStation/build",
+  "command": "/usr/bin/g++ -I/home/xzq/project/detectEnergyStation/include -isystem /usr/include/opencv4 -g -std=gnu++11 -o CMakeFiles/test.dir/src/DetectR/DetectR.cpp.o -c /home/xzq/project/detectEnergyStation/src/DetectR/DetectR.cpp",
+  "file": "/home/xzq/project/detectEnergyStation/src/DetectR/DetectR.cpp"
+},
+{
+  "directory": "/home/xzq/project/detectEnergyStation/build",
+  "command": "/usr/bin/g++ -I/home/xzq/project/detectEnergyStation/include -isystem /usr/include/opencv4 -g -std=gnu++11 -o CMakeFiles/test.dir/src/DetectR/drawR.cpp.o -c /home/xzq/project/detectEnergyStation/src/DetectR/drawR.cpp",
+  "file": "/home/xzq/project/detectEnergyStation/src/DetectR/drawR.cpp"
+},
+{
+  "directory": "/home/xzq/project/detectEnergyStation/build",
+  "command": "/usr/bin/g++ -I/home/xzq/project/detectEnergyStation/include -isystem /usr/include/opencv4 -g -std=gnu++11 -o CMakeFiles/test.dir/src/DetectR/findR.cpp.o -c /home/xzq/project/detectEnergyStation/src/DetectR/findR.cpp",
+  "file": "/home/xzq/project/detectEnergyStation/src/DetectR/findR.cpp"
+}
+]

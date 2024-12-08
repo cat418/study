@@ -1,0 +1,3 @@
+/home/xzq/project/detectEnergyStation/build/CMakeFiles/test.dir
+/home/xzq/project/detectEnergyStation/build/CMakeFiles/edit_cache.dir
+/home/xzq/project/detectEnergyStation/build/CMakeFiles/rebuild_cache.dir
