@@ -1,0 +1,3 @@
+/home/xzq/project/work/work_red/build/CMakeFiles/test.dir
+/home/xzq/project/work/work_red/build/CMakeFiles/edit_cache.dir
+/home/xzq/project/work/work_red/build/CMakeFiles/rebuild_cache.dir

@@ -3,12 +3,6 @@
 
 #include <iostream>
 #include <opencv2/opencv.hpp>
-enum LightColor {
-    RED,
-    BLUE,
-    UNKOWN
-};
-
 //类声明
 class Light;
 
@@ -36,13 +30,9 @@ class Light
 public:
     Light();
     ~Light() = default;
-    // 获取灯条的颜色
-    LightColor getColor( cv::Mat frame , cv::RotatedRect light_Rect );
+   
 public:
-    LightColor color;
     float m_height;
-    float m_color;
-    LightColor enemy_color;
     //获取灯条的旋转矩形
     std::vector<cv::RotatedRect> light_rect;
 };

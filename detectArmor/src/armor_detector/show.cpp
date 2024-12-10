@@ -7,9 +7,7 @@ void Armor_detector::show(std::string name,Armour a,Light l,int limit) {
         std::cout<<"error"<<std::endl;
         return;
     }
-   
     while(true) {
-        
         l.light_rect.clear();
         a.two_Light.clear();
 
@@ -32,7 +30,7 @@ void Armor_detector::show(std::string name,Armour a,Light l,int limit) {
         detect_light(contours,l);
         //匹配灯条
         match_light( frame, l, a );
-        // //匹配装甲板
+        //匹配装甲板
         match_armour(l,a);
         //绘制
         draw_armor(frame,l,a);
