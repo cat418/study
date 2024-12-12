@@ -37,6 +37,11 @@ void Armor_detector::draw_armor(cv::Mat &frame,Light &l,Armour &a) {
                 cv::line(frame,points2[1],points2[3],cv::Scalar(0,255,0),2,8,0);
                 cv::line(frame,points2[3],points[2],cv::Scalar(0,255,0),2,8,0);
                 cv::line(frame,points[2],points[0],cv::Scalar(0,255,0),2,8,0);
+                //特征点:左上 左下 右下 右上
+                a.four_point.push_back( points[0] );
+                a.four_point.push_back( points[2] );
+                a.four_point.push_back( points2[3] );
+                a.four_point.push_back( points2[1] );
             }
         }else {
             std::vector<cv::Point> contour;
@@ -51,16 +56,12 @@ void Armor_detector::draw_armor(cv::Mat &frame,Light &l,Armour &a) {
                 cv::line(frame,points[1],points[3],cv::Scalar(0,255,0),2,8,0);
                 cv::line(frame,points[3],points2[2],cv::Scalar(0,255,0),2,8,0);
                 cv::line(frame,points2[2],points2[0],cv::Scalar(0,255,0),2,8,0);
+                //特征点:左上 左下 右下 右上
+                a.four_point.push_back( points2[0]);
+                a.four_point.push_back( points2[2] );
+                a.four_point.push_back( points[3] );
+                a.four_point.push_back( points[1] );
             }
         }
     }
-
-    // for( auto & m : l.light_rect ) {
-    //     cv::Point2f points[4];
-    //     m.points(points);
-    //     cv::line(frame,points[0],points[1],cv::Scalar(0,255,0),2,8,0);
-    //     cv::line(frame,points[1],points[2],cv::Scalar(0,255,0),2,8,0);
-    //     cv::line(frame,points[2],points[3],cv::Scalar(0,255,0),2,8,0);
-    //     cv::line(frame,points[3],points[0],cv::Scalar(0,255,0),2,8,0);
-    // }
 }

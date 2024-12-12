@@ -3,6 +3,8 @@
 
 #include <iostream>
 #include <opencv2/opencv.hpp>
+#include "MvCameraControl.h"
+
 //类声明
 class Light;
 
@@ -19,6 +21,7 @@ public:
     float m_width;
     float m_height;
     std::vector<std::pair< cv::RotatedRect, cv::RotatedRect>> two_Light;
+    std::vector<cv::Point2f> four_point;//二维坐标
 };
 
 class Light

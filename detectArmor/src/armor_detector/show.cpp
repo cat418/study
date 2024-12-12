@@ -1,18 +1,22 @@
 #include "detect.h"
+#include "pnpslover.h"
+#include "MvCameraControl.h"
+#include "camera_class.h"
 
 //展示
 void Armor_detector::show(std::string name,Armour a,Light l,int limit) {
-    m_cap.open(name);
-    if(!m_cap.isOpened()) {
-        std::cout<<"error"<<std::endl;
-        return;
-    }
+   
+    int key;
+    camera cam;
+    cam.start_cam();
+
     while(true) {
         l.light_rect.clear();
         a.two_Light.clear();
-
         //读取图像
-        cv::Mat frame=read_frame().clone();
+        //cv::Mat frame=read_frame().clone();
+        cv::Mat frame;
+        cam.get_pic(&frame);
         if(frame.empty()) {
             std::cout<<"end"<<std::endl;
             break;
@@ -35,12 +39,16 @@ void Armor_detector::show(std::string name,Armour a,Light l,int limit) {
         //绘制
         draw_armor(frame,l,a);
         cv::imshow("armor",frame);
+        //解pnp
+        PnpSlover pnp;
+        pnp.calculate_pnp( a );
+        a.four_point.clear();
         }
-        int fps=m_cap.get(cv::CAP_PROP_FPS);
-        if (fps <= 0) {
-        fps = 30;  // 设置默认的帧率
+        key=waitKey(1);
+        if (key==27) {
+            cam.close_cam();
+            break;
         }
-        cv::waitKey(1000/fps);
         frame.release();
     }
     return;

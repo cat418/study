@@ -24,7 +24,6 @@ cv::Mat Armor_detector::findLight_deal_frame(cv::Mat frame,int limit) {
     //二值化图像
     cv::Mat binary;
     cv::threshold(gray,binary,limit,255,cv::THRESH_BINARY);
-    cv::imshow("binary",binary); 
 
     //通道分离
     cv::Mat img[3];
@@ -38,8 +37,6 @@ cv::Mat Armor_detector::findLight_deal_frame(cv::Mat frame,int limit) {
     //膨胀
     cv::Mat kernel2 = cv::getStructuringElement( 2, cv::Size(3,3));
     cv::dilate( r_b, r_b, kernel2);
-    cv::imshow("r_b",r_b);
-
     //和上面二值化图取交集
     cv::Mat result;
     cv::bitwise_and( r_b,binary, result );
