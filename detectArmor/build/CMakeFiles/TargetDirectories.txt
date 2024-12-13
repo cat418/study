@@ -1,8 +1,8 @@
-/home/xzq/project/hik/build/CMakeFiles/edit_cache.dir
-/home/xzq/project/hik/build/CMakeFiles/rebuild_cache.dir
-/home/xzq/project/hik/build/ArmorDetect/CMakeFiles/test.dir
-/home/xzq/project/hik/build/ArmorDetect/CMakeFiles/edit_cache.dir
-/home/xzq/project/hik/build/ArmorDetect/CMakeFiles/rebuild_cache.dir
-/home/xzq/project/hik/build/HikDriver/CMakeFiles/hik_driver.dir
-/home/xzq/project/hik/build/HikDriver/CMakeFiles/edit_cache.dir
-/home/xzq/project/hik/build/HikDriver/CMakeFiles/rebuild_cache.dir
+/home/xzq/project/detectArmor/build/CMakeFiles/edit_cache.dir
+/home/xzq/project/detectArmor/build/CMakeFiles/rebuild_cache.dir
+/home/xzq/project/detectArmor/build/ArmorDetect/CMakeFiles/test.dir
+/home/xzq/project/detectArmor/build/ArmorDetect/CMakeFiles/edit_cache.dir
+/home/xzq/project/detectArmor/build/ArmorDetect/CMakeFiles/rebuild_cache.dir
+/home/xzq/project/detectArmor/build/HikDriver/CMakeFiles/hik_driver.dir
+/home/xzq/project/detectArmor/build/HikDriver/CMakeFiles/edit_cache.dir
+/home/xzq/project/detectArmor/build/HikDriver/CMakeFiles/rebuild_cache.dir
