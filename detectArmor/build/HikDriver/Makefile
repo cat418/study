@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xzq/project/hik/build/CMakeFiles /home/xzq/project/hik/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/xzq/project/hik/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/xzq/project/hik/build/CMakeFiles /home/xzq/project/hik/build/HikDriver//CMakeFiles/progress.marks
+	cd /home/xzq/project/hik/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HikDriver/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xzq/project/hik/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/xzq/project/hik/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HikDriver/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,44 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/xzq/project/hik/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HikDriver/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/xzq/project/hik/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HikDriver/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/xzq/project/hik/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named test
+# Convenience name for target.
+HikDriver/CMakeFiles/hik_driver.dir/rule:
+	cd /home/xzq/project/hik/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HikDriver/CMakeFiles/hik_driver.dir/rule
+.PHONY : HikDriver/CMakeFiles/hik_driver.dir/rule
 
-# Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
-.PHONY : test
-
-# fast build rule for target.
-test/fast:
-	$(MAKE) $(MAKESILENT) -f ArmorDetect/CMakeFiles/test.dir/build.make ArmorDetect/CMakeFiles/test.dir/build
-.PHONY : test/fast
-
-#=============================================================================
-# Target rules for targets named hik_driver
-
-# Build rule for target.
-hik_driver: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hik_driver
+# Convenience name for target.
+hik_driver: HikDriver/CMakeFiles/hik_driver.dir/rule
 .PHONY : hik_driver
 
 # fast build rule for target.
 hik_driver/fast:
-	$(MAKE) $(MAKESILENT) -f HikDriver/CMakeFiles/hik_driver.dir/build.make HikDriver/CMakeFiles/hik_driver.dir/build
+	cd /home/xzq/project/hik/build && $(MAKE) $(MAKESILENT) -f HikDriver/CMakeFiles/hik_driver.dir/build.make HikDriver/CMakeFiles/hik_driver.dir/build
 .PHONY : hik_driver/fast
+
+src/HikDriver.o: src/HikDriver.cpp.o
+.PHONY : src/HikDriver.o
+
+# target to build an object file
+src/HikDriver.cpp.o:
+	cd /home/xzq/project/hik/build && $(MAKE) $(MAKESILENT) -f HikDriver/CMakeFiles/hik_driver.dir/build.make HikDriver/CMakeFiles/hik_driver.dir/src/HikDriver.cpp.o
+.PHONY : src/HikDriver.cpp.o
+
+src/HikDriver.i: src/HikDriver.cpp.i
+.PHONY : src/HikDriver.i
+
+# target to preprocess a source file
+src/HikDriver.cpp.i:
+	cd /home/xzq/project/hik/build && $(MAKE) $(MAKESILENT) -f HikDriver/CMakeFiles/hik_driver.dir/build.make HikDriver/CMakeFiles/hik_driver.dir/src/HikDriver.cpp.i
+.PHONY : src/HikDriver.cpp.i
+
+src/HikDriver.s: src/HikDriver.cpp.s
+.PHONY : src/HikDriver.s
+
+# target to generate assembly for a file
+src/HikDriver.cpp.s:
+	cd /home/xzq/project/hik/build && $(MAKE) $(MAKESILENT) -f HikDriver/CMakeFiles/hik_driver.dir/build.make HikDriver/CMakeFiles/hik_driver.dir/src/HikDriver.cpp.s
+.PHONY : src/HikDriver.cpp.s
 
 # Help Target
 help:
@@ -151,7 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... hik_driver"
-	@echo "... test"
+	@echo "... src/HikDriver.o"
+	@echo "... src/HikDriver.i"
+	@echo "... src/HikDriver.s"
 .PHONY : help
 
 
@@ -163,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/xzq/project/hik/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
