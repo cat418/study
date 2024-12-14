@@ -1,15 +1,4 @@
 # ninja log v5
-0	4	0	clean	a31eedcededa8236
-3	2731	1734086906292295385	ArmorDetect/CMakeFiles/test.dir/src/armor_detector/show.cpp.o	dc3c6fbdaa4f1fad
-2	2364	1734088157315220077	ArmorDetect/CMakeFiles/test.dir/src/armor_detector/detectLight.cpp.o	e5cdefdb2e3b71c1
-1	2473	1734088157424223830	ArmorDetect/CMakeFiles/test.dir/src/Armor/Armor.cpp.o	3dbb2880695218ab
-2	2582	1734088157533227584	ArmorDetect/CMakeFiles/test.dir/src/armor_detector/matchLight.cpp.o	391516b50def5ef1
-1	2314	1734088157265218355	ArmorDetect/CMakeFiles/test.dir/src/Light/Light.cpp.o	b326973231b1b5c5
-2	2242	1734088157193215876	ArmorDetect/CMakeFiles/test.dir/src/armor_detector/readDealCheck.cpp.o	ef2e1bfd77ef895a
-2	2545	1734088157496226310	ArmorDetect/CMakeFiles/test.dir/src/armor_detector/draw.cpp.o	3c7988b6cc2520b9
-2	2135	1734088157085212157	ArmorDetect/CMakeFiles/test.dir/src/pnpSlover/pnpSlover.cpp.o	9d20df5e4810ec75
-2	2372	1734088157323220353	ArmorDetect/CMakeFiles/test.dir/src/armor_detector/matchArmor.cpp.o	bdb154819a7f0aa5
-3	2797	1734088157748234987	HikDriver/CMakeFiles/hik_driver.dir/src/HikDriver.cpp.o	bb3dbfa2fa3ccc7e
 3103	3136	1734086906696313253	HikDriver/libhik_driver.a	1f183cfbdd4018ff
-1	2583	1734088157534227618	ArmorDetect/CMakeFiles/test.dir/main.cpp.o	afceb76c7202625b
-3136	3487	1734086907044328644	ArmorDetect/test	95e2838c9f2d5a9c
+3	2797	1734088157748234987	HikDriver/CMakeFiles/hik_driver.dir/src/HikDriver.cpp.o	bb3dbfa2fa3ccc7e
+0	4	0	clean	a31eedcededa8236

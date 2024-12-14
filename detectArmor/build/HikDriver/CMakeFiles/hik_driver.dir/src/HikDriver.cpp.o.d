@@ -1,5 +1,5 @@
 HikDriver/CMakeFiles/hik_driver.dir/src/HikDriver.cpp.o: \
- /home/xzq/project/hik/HikDriver/src/HikDriver.cpp \
+ /home/xzq/project/detectArmor/HikDriver/src/HikDriver.cpp \
  /usr/include/stdc-predef.h /usr/include/glog/logging.h \
  /usr/include/errno.h /usr/include/features.h \
  /usr/include/features-time64.h \
@@ -208,7 +208,7 @@ HikDriver/CMakeFiles/hik_driver.dir/src/HikDriver.cpp.o: \
  /usr/include/c++/11/pstl/execution_defs.h /usr/include/fmt/core.h \
  /usr/include/c++/11/cstddef /usr/include/c++/11/cstring \
  /usr/include/c++/11/iterator /usr/include/c++/11/bits/stream_iterator.h \
- /home/xzq/project/hik/HikDriver/include/HikDriver/HikDriver.h \
+ /home/xzq/project/detectArmor/HikDriver/include/HikDriver/HikDriver.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/bits/node_handle.h \
  /usr/include/c++/11/bits/stl_map.h \

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DFMT_LOCALE -DFMT_SHARED -DGFLAGS_IS_A_DLL=0 -DGOOGLE_GLOG_DLL_DECL="" -DGOOGLE_GLOG_DLL_DECL_FOR_UNITTESTS=""
 
-CXX_INCLUDES = -I/home/xzq/project/hik/HikDriver/include -I/opt/MVS/include -isystem /usr/include/opencv4
+CXX_INCLUDES = -I/home/xzq/project/detectArmor/HikDriver/include -I/opt/MVS/include -isystem /usr/include/opencv4
 
 CXX_FLAGS = -std=gnu++17
 
