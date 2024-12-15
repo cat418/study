@@ -42,6 +42,11 @@ void Armor_detector::draw_armor(cv::Mat &frame,Light &l,Armour &a) {
                 a.four_point.push_back( points[2] );
                 a.four_point.push_back( points2[3] );
                 a.four_point.push_back( points2[1] );
+                // for ( int i=0; i<a.four_point.size();i++) {
+                //     cv::circle(frame,a.four_point[i],5,cv::Scalar(0,255,0),-1);
+                //     std::string num = std::to_string(i);
+                //     cv::putText(frame, num, a.four_point[i] + cv::Point2f(10,-10),cv::FONT_HERSHEY_SIMPLEX,0.5,cv::Scalar(255,0,0),1);
+                // }
             }
         }else {
             std::vector<cv::Point> contour;
@@ -61,6 +66,11 @@ void Armor_detector::draw_armor(cv::Mat &frame,Light &l,Armour &a) {
                 a.four_point.push_back( points2[2] );
                 a.four_point.push_back( points[3] );
                 a.four_point.push_back( points[1] );
+                // for ( int i=0; i<a.four_point.size();i++) {
+                //     cv::circle(frame,a.four_point[i],5,cv::Scalar(0,255,0),-1);
+                //     std::string num = std::to_string(i);
+                //     cv::putText(frame, num, a.four_point[i] + cv::Point2f(10,-10),cv::FONT_HERSHEY_SIMPLEX,0.5,cv::Scalar(255,0,0),1);
+                // }
             }
         }
     }

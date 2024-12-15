@@ -44,7 +44,7 @@ void Armor_detector::show(std::string name,Armour a,Light l,int limit) {
         cv::imshow("armor",img);
         //解pnp
         PnpSlover pnp;
-        pnp.calculate_pnp( a );
+        pnp.calculate_pnp( a, l);
         a.four_point.clear();
         }
         cv::waitKey(30);

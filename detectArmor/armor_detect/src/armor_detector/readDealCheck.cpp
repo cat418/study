@@ -15,7 +15,6 @@ cv::Mat Armor_detector::read_frame() {
     return frame;
 }
 
-
 //预处理
 cv::Mat Armor_detector::findLight_deal_frame(cv::Mat frame,int limit) {
     //转化为灰度图

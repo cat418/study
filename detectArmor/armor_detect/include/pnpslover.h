@@ -10,7 +10,7 @@ public:
     ~PnpSlover() = default;
     cv::Mat getMatrix(){ return m_matrix;}
     cv::Mat getDistCoeffs(){ return m_distCoeffs;}
-    void calculate_pnp(Armour a);
+    void calculate_pnp(Armour &a, Light &l);
 private:
     cv::Mat m_rvec;//旋转向量
     cv::Mat m_tvec;//平移向量

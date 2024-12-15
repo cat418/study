@@ -15,7 +15,7 @@ void Armor_detector::match_light( cv::Mat frame, Light &l, Armour &a) {
         if( angle_diff > 45 ) {
             angle_diff = 90 - angle_diff;
         }
-
+        
         //根据面积匹配 
         float area1 = l.light_rect[i].size.height * l.light_rect[i].size.width ;
         float area2 = l.light_rect[j].size.height * l.light_rect[j].size.width ;
