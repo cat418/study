@@ -1,0 +1,26 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable talker[0m
+[ 75%] Built target talker
+[100%] [32m[1mLinking CXX executable listener[0m
+[100%] Built target listener
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/xzq/project/ros2_ws3/install/cpp_pubsub/lib/cpp_pubsub/talker
+-- Symlinking: /home/xzq/project/ros2_ws3/install/cpp_pubsub/lib/cpp_pubsub/listener
+-- Symlinking: /home/xzq/project/ros2_ws3/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub
+-- Symlinking: /home/xzq/project/ros2_ws3/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub
+-- Symlinking: /home/xzq/project/ros2_ws3/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh
+-- Symlinking: /home/xzq/project/ros2_ws3/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv
+-- Symlinking: /home/xzq/project/ros2_ws3/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh
+-- Symlinking: /home/xzq/project/ros2_ws3/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv
+-- Symlinking: /home/xzq/project/ros2_ws3/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash
+-- Symlinking: /home/xzq/project/ros2_ws3/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh
+-- Symlinking: /home/xzq/project/ros2_ws3/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh
+-- Symlinking: /home/xzq/project/ros2_ws3/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv
+-- Symlinking: /home/xzq/project/ros2_ws3/install/cpp_pubsub/share/cpp_pubsub/package.dsv
+-- Symlinking: /home/xzq/project/ros2_ws3/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub
+-- Symlinking: /home/xzq/project/ros2_ws3/install/cpp_pubsub/share/cpp_pubsub/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/xzq/project/ros2_ws3/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake
+-- Symlinking: /home/xzq/project/ros2_ws3/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake
+-- Symlinking: /home/xzq/project/ros2_ws3/install/cpp_pubsub/share/cpp_pubsub/package.xml

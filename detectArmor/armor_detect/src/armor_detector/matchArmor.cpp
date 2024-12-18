@@ -17,8 +17,8 @@ void Armor_detector::match_armour(Light &l,Armour &a) {
         float ratio1 = Distance / height1;
         float ratio2 = Distance / height2;
 
-        if( ratio1 < ( a.m_width / l.m_height +0.6 ) && ratio1 > 0 &&
-            ratio2 < ( a.m_width/ l.m_height +0.6 ) && ratio2 > 0 && 
+        if( ratio1 < ( a.m_width / l.m_height +1 ) && ratio1 > 0 &&
+            ratio2 < ( a.m_width/ l.m_height +1 ) && ratio2 > 0 && 
             Distance > 20 ) {
                 really_armor.push_back( std::make_pair( r.first,r.second ));
         }

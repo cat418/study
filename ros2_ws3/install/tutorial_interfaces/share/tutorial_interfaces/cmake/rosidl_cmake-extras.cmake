@@ -1,0 +1,1 @@
+/home/xzq/project/ros2_ws3/build/tutorial_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake

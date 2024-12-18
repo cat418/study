@@ -1,0 +1,1 @@
+/home/xzq/project/ros2_ws3/build/tutorial_interfaces/rosidl_generator_cpp/tutorial_interfaces/msg/detail/armor_msg__builder.hpp

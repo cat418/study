@@ -1,0 +1,1 @@
+/home/xzq/project/ros2_ws3/build/tutorial_interfaces/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/detail/armor_msg__rosidl_typesupport_fastrtps_c.h

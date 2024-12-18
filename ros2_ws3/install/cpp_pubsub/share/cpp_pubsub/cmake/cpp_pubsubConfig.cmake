@@ -1,0 +1,1 @@
+/home/xzq/project/ros2_ws3/build/cpp_pubsub/ament_cmake_core/cpp_pubsubConfig.cmake
