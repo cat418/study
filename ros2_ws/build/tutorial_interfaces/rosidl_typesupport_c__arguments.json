@@ -1,9 +1,9 @@
 {
   "package_name": "tutorial_interfaces",
-  "output_dir": "/home/xzq/project/ros2_ws3/build/tutorial_interfaces/rosidl_typesupport_c/tutorial_interfaces",
+  "output_dir": "/home/xzq/project/ros2_ws/build/tutorial_interfaces/rosidl_typesupport_c/tutorial_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_c/resource",
   "idl_tuples": [
-    "/home/xzq/project/ros2_ws3/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:msg/ArmorMsg.idl"
+    "/home/xzq/project/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:msg/ArmorMsg.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
@@ -74,7 +74,7 @@
     "/opt/ros/humble/share/rosidl_typesupport_c/resource/idl__type_support.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_c/resource/msg__type_support.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_c/resource/srv__type_support.cpp.em",
-    "/home/xzq/project/ros2_ws3/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/msg/ArmorMsg.idl",
+    "/home/xzq/project/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/msg/ArmorMsg.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl",

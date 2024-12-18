@@ -1,1 +1,2 @@
-/home/xzq/project/ros2_ws3/build/tutorial_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/tutorial_interfaces
+msg/ArmorMsg.idl
+msg/ArmorMsg.msg

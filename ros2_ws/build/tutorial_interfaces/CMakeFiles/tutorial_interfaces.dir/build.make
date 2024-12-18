@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xzq/project/ros2_ws3/src/tutorial_interfaces
+CMAKE_SOURCE_DIR = /home/xzq/project/ros2_ws/src/tutorial_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xzq/project/ros2_ws3/build/tutorial_interfaces
+CMAKE_BINARY_DIR = /home/xzq/project/ros2_ws/build/tutorial_interfaces
 
 # Utility rule file for tutorial_interfaces.
 
@@ -66,7 +66,7 @@ include CMakeFiles/tutorial_interfaces.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/tutorial_interfaces.dir/progress.make
 
-CMakeFiles/tutorial_interfaces: /home/xzq/project/ros2_ws3/src/tutorial_interfaces/msg/ArmorMsg.msg
+CMakeFiles/tutorial_interfaces: /home/xzq/project/ros2_ws/src/tutorial_interfaces/msg/ArmorMsg.msg
 CMakeFiles/tutorial_interfaces: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 CMakeFiles/tutorial_interfaces: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 CMakeFiles/tutorial_interfaces: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -111,6 +111,6 @@ CMakeFiles/tutorial_interfaces.dir/clean:
 .PHONY : CMakeFiles/tutorial_interfaces.dir/clean
 
 CMakeFiles/tutorial_interfaces.dir/depend:
-	cd /home/xzq/project/ros2_ws3/build/tutorial_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xzq/project/ros2_ws3/src/tutorial_interfaces /home/xzq/project/ros2_ws3/src/tutorial_interfaces /home/xzq/project/ros2_ws3/build/tutorial_interfaces /home/xzq/project/ros2_ws3/build/tutorial_interfaces /home/xzq/project/ros2_ws3/build/tutorial_interfaces/CMakeFiles/tutorial_interfaces.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/xzq/project/ros2_ws/build/tutorial_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xzq/project/ros2_ws/src/tutorial_interfaces /home/xzq/project/ros2_ws/src/tutorial_interfaces /home/xzq/project/ros2_ws/build/tutorial_interfaces /home/xzq/project/ros2_ws/build/tutorial_interfaces /home/xzq/project/ros2_ws/build/tutorial_interfaces/CMakeFiles/tutorial_interfaces.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tutorial_interfaces.dir/depend
 

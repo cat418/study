@@ -1,1 +1,4 @@
-/home/xzq/project/ros2_ws3/build/tutorial_interfaces/ament_cmake_environment_hooks/local_setup.dsv
+source;share/tutorial_interfaces/environment/ament_prefix_path.sh
+source;share/tutorial_interfaces/environment/library_path.sh
+source;share/tutorial_interfaces/environment/path.sh
+source;share/tutorial_interfaces/environment/pythonpath.sh
