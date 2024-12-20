@@ -1,0 +1,8 @@
+{
+  "package_name": "armor_interfaces",
+  "non_idl_tuples": [
+    "/home/xzq/project/ros2_ws/src/armor_interfaces:msg/Armor.msg",
+    "/home/xzq/project/ros2_ws/src/armor_interfaces:msg/Armors.msg",
+    "/home/xzq/project/ros2_ws/src/armor_interfaces:msg/Target.msg"
+  ]
+}

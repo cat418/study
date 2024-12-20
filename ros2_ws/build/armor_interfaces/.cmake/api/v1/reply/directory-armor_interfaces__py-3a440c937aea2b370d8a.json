@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "armor_interfaces__py",
+		"source" : "/home/xzq/project/ros2_ws/build/armor_interfaces/armor_interfaces__py"
+	}
+}

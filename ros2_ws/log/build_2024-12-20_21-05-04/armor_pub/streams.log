@@ -1,0 +1,49 @@
+[0.014s] Invoking command in '/home/xzq/project/ros2_ws/build/armor_pub': AMENT_PREFIX_PATH=/home/xzq/project/ros2_ws/install/armor_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xzq/project/ros2_ws/install/armor_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/xzq/project/ros2_ws/install/armor_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/xzq/project/ros2_ws/install/armor_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/xzq/project/ros2_ws/build/armor_pub -- -j12 -l12
+[0.032s] [0m-- CMAKE_BUILD_TYPE: Release[0m
+[0.032s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.179s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.181s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.184s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.190s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.198s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.217s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.218s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.281s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.411s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.412s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.429s] -- Configuring done
+[0.441s] -- Generating done
+[0.446s] -- Build files have been written to: /home/xzq/project/ros2_ws/build/armor_pub
+[0.464s] [35m[1mConsolidate compiler generated dependencies of target armor_pub[0m
+[0.467s] [35m[1mConsolidate compiler generated dependencies of target armor_pub_node[0m
+[0.477s] [ 50%] Built target armor_pub
+[0.480s] [100%] Built target armor_pub_node
+[0.488s] Invoked command in '/home/xzq/project/ros2_ws/build/armor_pub' returned '0': AMENT_PREFIX_PATH=/home/xzq/project/ros2_ws/install/armor_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xzq/project/ros2_ws/install/armor_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/xzq/project/ros2_ws/install/armor_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/xzq/project/ros2_ws/install/armor_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/xzq/project/ros2_ws/build/armor_pub -- -j12 -l12
+[0.489s] Invoking command in '/home/xzq/project/ros2_ws/build/armor_pub': AMENT_PREFIX_PATH=/home/xzq/project/ros2_ws/install/armor_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xzq/project/ros2_ws/install/armor_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/xzq/project/ros2_ws/install/armor_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/xzq/project/ros2_ws/install/armor_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/xzq/project/ros2_ws/build/armor_pub
+[0.497s] -- Install configuration: "Release"
+[0.497s] -- Up-to-date: /home/xzq/project/ros2_ws/install/armor_pub/lib/armor_pub/armor_pub_node
+[0.497s] -- Up-to-date: /home/xzq/project/ros2_ws/install/armor_pub/include
+[0.497s] -- Up-to-date: /home/xzq/project/ros2_ws/install/armor_pub/include/ArmorPubNode.h
+[0.497s] -- Up-to-date: /home/xzq/project/ros2_ws/install/armor_pub/share/armor_pub/environment/library_path.sh
+[0.497s] -- Installing: /home/xzq/project/ros2_ws/install/armor_pub/share/armor_pub/environment/library_path.dsv
+[0.498s] -- Up-to-date: /home/xzq/project/ros2_ws/install/armor_pub/lib/libarmor_pub.so
+[0.498s] -- Up-to-date: /home/xzq/project/ros2_ws/install/armor_pub/share/ament_index/resource_index/package_run_dependencies/armor_pub
+[0.498s] -- Up-to-date: /home/xzq/project/ros2_ws/install/armor_pub/share/ament_index/resource_index/parent_prefix_path/armor_pub
+[0.498s] -- Up-to-date: /home/xzq/project/ros2_ws/install/armor_pub/share/armor_pub/environment/ament_prefix_path.sh
+[0.498s] -- Installing: /home/xzq/project/ros2_ws/install/armor_pub/share/armor_pub/environment/ament_prefix_path.dsv
+[0.498s] -- Up-to-date: /home/xzq/project/ros2_ws/install/armor_pub/share/armor_pub/environment/path.sh
+[0.498s] -- Installing: /home/xzq/project/ros2_ws/install/armor_pub/share/armor_pub/environment/path.dsv
+[0.498s] -- Up-to-date: /home/xzq/project/ros2_ws/install/armor_pub/share/armor_pub/local_setup.bash
+[0.499s] -- Up-to-date: /home/xzq/project/ros2_ws/install/armor_pub/share/armor_pub/local_setup.sh
+[0.499s] -- Up-to-date: /home/xzq/project/ros2_ws/install/armor_pub/share/armor_pub/local_setup.zsh
+[0.499s] -- Installing: /home/xzq/project/ros2_ws/install/armor_pub/share/armor_pub/local_setup.dsv
+[0.499s] -- Installing: /home/xzq/project/ros2_ws/install/armor_pub/share/armor_pub/package.dsv
+[0.499s] -- Up-to-date: /home/xzq/project/ros2_ws/install/armor_pub/share/ament_index/resource_index/packages/armor_pub
+[0.499s] -- Up-to-date: /home/xzq/project/ros2_ws/install/armor_pub/share/ament_index/resource_index/rclcpp_components/armor_pub
+[0.499s] -- Up-to-date: /home/xzq/project/ros2_ws/install/armor_pub/share/armor_pub/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.499s] -- Up-to-date: /home/xzq/project/ros2_ws/install/armor_pub/share/armor_pub/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.499s] -- Up-to-date: /home/xzq/project/ros2_ws/install/armor_pub/share/armor_pub/cmake/ament_cmake_export_libraries-extras.cmake
+[0.499s] -- Up-to-date: /home/xzq/project/ros2_ws/install/armor_pub/share/armor_pub/cmake/armor_pubConfig.cmake
+[0.499s] -- Up-to-date: /home/xzq/project/ros2_ws/install/armor_pub/share/armor_pub/cmake/armor_pubConfig-version.cmake
+[0.500s] -- Up-to-date: /home/xzq/project/ros2_ws/install/armor_pub/share/armor_pub/package.xml
+[0.501s] Invoked command in '/home/xzq/project/ros2_ws/build/armor_pub' returned '0': AMENT_PREFIX_PATH=/home/xzq/project/ros2_ws/install/armor_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xzq/project/ros2_ws/install/armor_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/xzq/project/ros2_ws/install/armor_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/xzq/project/ros2_ws/install/armor_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/xzq/project/ros2_ws/build/armor_pub

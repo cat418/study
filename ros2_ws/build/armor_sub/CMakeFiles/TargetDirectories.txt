@@ -1,0 +1,11 @@
+/home/xzq/project/ros2_ws/build/armor_sub/CMakeFiles/uninstall.dir
+/home/xzq/project/ros2_ws/build/armor_sub/CMakeFiles/armor_sub_uninstall.dir
+/home/xzq/project/ros2_ws/build/armor_sub/CMakeFiles/armor_sub.dir
+/home/xzq/project/ros2_ws/build/armor_sub/CMakeFiles/armor_sub_node.dir
+/home/xzq/project/ros2_ws/build/armor_sub/CMakeFiles/test.dir
+/home/xzq/project/ros2_ws/build/armor_sub/CMakeFiles/edit_cache.dir
+/home/xzq/project/ros2_ws/build/armor_sub/CMakeFiles/rebuild_cache.dir
+/home/xzq/project/ros2_ws/build/armor_sub/CMakeFiles/list_install_components.dir
+/home/xzq/project/ros2_ws/build/armor_sub/CMakeFiles/install.dir
+/home/xzq/project/ros2_ws/build/armor_sub/CMakeFiles/install/local.dir
+/home/xzq/project/ros2_ws/build/armor_sub/CMakeFiles/install/strip.dir
