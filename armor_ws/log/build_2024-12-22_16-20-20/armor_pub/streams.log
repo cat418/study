@@ -1,0 +1,174 @@
+[0.006s] Invoking command in '/home/xzq/project/armor_ws/build/armor_pub': AMENT_PREFIX_PATH=/home/xzq/project/armor_ws/install/armor_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xzq/project/armor_ws/install/armor_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/xzq/project/armor_ws/install/armor_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/xzq/project/armor_ws/install/armor_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/xzq/project/armor_ws/build/armor_pub -- -j12 -l12
+[0.029s] [0m-- CMAKE_BUILD_TYPE: Release[0m
+[0.029s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.163s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.165s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.168s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.173s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.180s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.198s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.198s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.261s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.386s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.386s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.401s] -- Configuring done
+[0.416s] -- Generating done
+[0.421s] -- Build files have been written to: /home/xzq/project/armor_ws/build/armor_pub
+[0.440s] [35m[1mConsolidate compiler generated dependencies of target hik_driver[0m
+[0.441s] [35m[1mConsolidate compiler generated dependencies of target armor_pub_node[0m
+[0.449s] [  7%] [32mBuilding CXX object HikDriver/CMakeFiles/hik_driver.dir/src/HikDriver.cpp.o[0m
+[0.451s] [ 21%] Built target armor_pub_node
+[1.557s] [ 28%] [32m[1mLinking CXX static library libhik_driver.a[0m
+[1.604s] [ 28%] Built target hik_driver
+[1.615s] [35m[1mConsolidate compiler generated dependencies of target armor_pub[0m
+[1.638s] [ 50%] [32mBuilding CXX object CMakeFiles/armor_pub.dir/src/armor_detector/matchLight.cpp.o[0m
+[1.638s] [ 50%] [32mBuilding CXX object CMakeFiles/armor_pub.dir/src/armor_detector/detectLight.cpp.o[0m
+[1.638s] [ 50%] [32mBuilding CXX object CMakeFiles/armor_pub.dir/src/armor_detector/draw.cpp.o[0m
+[1.638s] [ 57%] [32mBuilding CXX object CMakeFiles/armor_pub.dir/src/Armor/Armor.cpp.o[0m
+[1.638s] [ 64%] [32mBuilding CXX object CMakeFiles/armor_pub.dir/src/Light/Light.cpp.o[0m
+[1.639s] [ 71%] [32mBuilding CXX object CMakeFiles/armor_pub.dir/src/pnpSlover/pnpSlover.cpp.o[0m
+[1.639s] [ 78%] [32mBuilding CXX object CMakeFiles/armor_pub.dir/src/armor_detector/readDealCheck.cpp.o[0m
+[1.639s] [ 85%] [32mBuilding CXX object CMakeFiles/armor_pub.dir/src/armor_detector/show.cpp.o[0m
+[1.640s] [ 92%] [32mBuilding CXX object CMakeFiles/armor_pub.dir/src/armor_detector/matchArmor.cpp.o[0m
+[2.687s] In file included from [01m[K/home/xzq/project/armor_ws/src/detectArmor/include/detect.h:7[m[K,
+[2.687s]                  from [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/show.cpp:1[m[K:
+[2.687s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:[m[K In copy constructor ‘[01m[KHikFrame::HikFrame(const HikFrame&)[m[K’:
+[2.687s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:46:13:[m[K [01;35m[Kwarning: [m[K‘[01m[KHikFrame::m_timestamp[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.687s]    46 |     int64_t [01;35m[Km_timestamp[m[K = 0;  // milliseconds
+[2.687s]       |             [01;35m[K^~~~~~~~~~~[m[K
+[2.687s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:45:13:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kcv::Mat HikFrame::m_rgb_frame[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.687s]    45 |     cv::Mat [01;35m[Km_rgb_frame[m[K = {};
+[2.687s]       |             [01;35m[K^~~~~~~~~~~[m[K
+[2.687s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:54:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.687s]    54 |     [01;35m[KHikFrame[m[K(const HikFrame& other)
+[2.687s]       |     [01;35m[K^~~~~~~~[m[K
+[2.695s] In file included from [01m[K/home/xzq/project/armor_ws/src/detectArmor/include/detect.h:7[m[K,
+[2.695s]                  from [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/matchLight.cpp:1[m[K:
+[2.695s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:[m[K In copy constructor ‘[01m[KHikFrame::HikFrame(const HikFrame&)[m[K’:
+[2.695s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:46:13:[m[K [01;35m[Kwarning: [m[K‘[01m[KHikFrame::m_timestamp[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.695s]    46 |     int64_t [01;35m[Km_timestamp[m[K = 0;  // milliseconds
+[2.695s]       |             [01;35m[K^~~~~~~~~~~[m[K
+[2.695s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:45:13:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kcv::Mat HikFrame::m_rgb_frame[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.695s]    45 |     cv::Mat [01;35m[Km_rgb_frame[m[K = {};
+[2.695s]       |             [01;35m[K^~~~~~~~~~~[m[K
+[2.695s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:54:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.695s]    54 |     [01;35m[KHikFrame[m[K(const HikFrame& other)
+[2.696s]       |     [01;35m[K^~~~~~~~[m[K
+[2.696s] In file included from [01m[K/home/xzq/project/armor_ws/src/detectArmor/include/detect.h:7[m[K,
+[2.696s]                  from [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/readDealCheck.cpp:1[m[K:
+[2.696s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:[m[K In copy constructor ‘[01m[KHikFrame::HikFrame(const HikFrame&)[m[K’:
+[2.696s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:46:13:[m[K [01;35m[Kwarning: [m[K‘[01m[KHikFrame::m_timestamp[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.696s]    46 |     int64_t [01;35m[Km_timestamp[m[K = 0;  // milliseconds
+[2.696s]       |             [01;35m[K^~~~~~~~~~~[m[K
+[2.696s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:45:13:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kcv::Mat HikFrame::m_rgb_frame[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.696s]    45 |     cv::Mat [01;35m[Km_rgb_frame[m[K = {};
+[2.696s]       |             [01;35m[K^~~~~~~~~~~[m[K
+[2.696s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:54:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.696s]    54 |     [01;35m[KHikFrame[m[K(const HikFrame& other)
+[2.696s]       |     [01;35m[K^~~~~~~~[m[K
+[3.230s] In file included from [01m[K/home/xzq/project/armor_ws/src/detectArmor/include/detect.h:7[m[K,
+[3.230s]                  from [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/matchArmor.cpp:1[m[K:
+[3.230s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:[m[K In copy constructor ‘[01m[KHikFrame::HikFrame(const HikFrame&)[m[K’:
+[3.230s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:46:13:[m[K [01;35m[Kwarning: [m[K‘[01m[KHikFrame::m_timestamp[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.230s]    46 |     int64_t [01;35m[Km_timestamp[m[K = 0;  // milliseconds
+[3.230s]       |             [01;35m[K^~~~~~~~~~~[m[K
+[3.230s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:45:13:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kcv::Mat HikFrame::m_rgb_frame[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.230s]    45 |     cv::Mat [01;35m[Km_rgb_frame[m[K = {};
+[3.230s]       |             [01;35m[K^~~~~~~~~~~[m[K
+[3.231s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:54:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.231s]    54 |     [01;35m[KHikFrame[m[K(const HikFrame& other)
+[3.231s]       |     [01;35m[K^~~~~~~~[m[K
+[3.248s] In file included from [01m[K/home/xzq/project/armor_ws/src/detectArmor/include/detect.h:7[m[K,
+[3.248s]                  from [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/Armor/Armor.cpp:1[m[K:
+[3.249s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:[m[K In copy constructor ‘[01m[KHikFrame::HikFrame(const HikFrame&)[m[K’:
+[3.249s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:46:13:[m[K [01;35m[Kwarning: [m[K‘[01m[KHikFrame::m_timestamp[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.249s]    46 |     int64_t [01;35m[Km_timestamp[m[K = 0;  // milliseconds
+[3.249s]       |             [01;35m[K^~~~~~~~~~~[m[K
+[3.249s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:45:13:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kcv::Mat HikFrame::m_rgb_frame[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.249s]    45 |     cv::Mat [01;35m[Km_rgb_frame[m[K = {};
+[3.249s]       |             [01;35m[K^~~~~~~~~~~[m[K
+[3.249s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:54:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.249s]    54 |     [01;35m[KHikFrame[m[K(const HikFrame& other)
+[3.249s]       |     [01;35m[K^~~~~~~~[m[K
+[3.429s] In file included from [01m[K/home/xzq/project/armor_ws/src/detectArmor/include/detect.h:7[m[K,
+[3.429s]                  from [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/Light/Light.cpp:1[m[K:
+[3.430s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:[m[K In copy constructor ‘[01m[KHikFrame::HikFrame(const HikFrame&)[m[K’:
+[3.430s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:46:13:[m[K [01;35m[Kwarning: [m[K‘[01m[KHikFrame::m_timestamp[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.430s]    46 |     int64_t [01;35m[Km_timestamp[m[K = 0;  // milliseconds
+[3.430s]       |             [01;35m[K^~~~~~~~~~~[m[K
+[3.430s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:45:13:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kcv::Mat HikFrame::m_rgb_frame[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.430s]    45 |     cv::Mat [01;35m[Km_rgb_frame[m[K = {};
+[3.430s]       |             [01;35m[K^~~~~~~~~~~[m[K
+[3.430s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:54:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.430s]    54 |     [01;35m[KHikFrame[m[K(const HikFrame& other)
+[3.430s]       |     [01;35m[K^~~~~~~~[m[K
+[3.430s] In file included from [01m[K/home/xzq/project/armor_ws/src/detectArmor/include/detect.h:7[m[K,
+[3.430s]                  from [01m[K/home/xzq/project/armor_ws/src/detectArmor/include/pnpslover.h:4[m[K,
+[3.430s]                  from [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/pnpSlover/pnpSlover.cpp:1[m[K:
+[3.430s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:[m[K In copy constructor ‘[01m[KHikFrame::HikFrame(const HikFrame&)[m[K’:
+[3.430s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:46:13:[m[K [01;35m[Kwarning: [m[K‘[01m[KHikFrame::m_timestamp[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.430s]    46 |     int64_t [01;35m[Km_timestamp[m[K = 0;  // milliseconds
+[3.430s]       |             [01;35m[K^~~~~~~~~~~[m[K
+[3.431s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:45:13:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kcv::Mat HikFrame::m_rgb_frame[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.431s]    45 |     cv::Mat [01;35m[Km_rgb_frame[m[K = {};
+[3.431s]       |             [01;35m[K^~~~~~~~~~~[m[K
+[3.431s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:54:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.431s]    54 |     [01;35m[KHikFrame[m[K(const HikFrame& other)
+[3.431s]       |     [01;35m[K^~~~~~~~[m[K
+[3.434s] In file included from [01m[K/home/xzq/project/armor_ws/src/detectArmor/include/detect.h:7[m[K,
+[3.434s]                  from [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/detectLight.cpp:1[m[K:
+[3.434s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:[m[K In copy constructor ‘[01m[KHikFrame::HikFrame(const HikFrame&)[m[K’:
+[3.434s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:46:13:[m[K [01;35m[Kwarning: [m[K‘[01m[KHikFrame::m_timestamp[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.434s]    46 |     int64_t [01;35m[Km_timestamp[m[K = 0;  // milliseconds
+[3.434s]       |             [01;35m[K^~~~~~~~~~~[m[K
+[3.434s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:45:13:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kcv::Mat HikFrame::m_rgb_frame[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.435s]    45 |     cv::Mat [01;35m[Km_rgb_frame[m[K = {};
+[3.435s]       |             [01;35m[K^~~~~~~~~~~[m[K
+[3.435s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:54:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.435s]    54 |     [01;35m[KHikFrame[m[K(const HikFrame& other)
+[3.435s]       |     [01;35m[K^~~~~~~~[m[K
+[3.435s] In file included from [01m[K/home/xzq/project/armor_ws/src/detectArmor/include/detect.h:7[m[K,
+[3.435s]                  from [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/draw.cpp:1[m[K:
+[3.435s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:[m[K In copy constructor ‘[01m[KHikFrame::HikFrame(const HikFrame&)[m[K’:
+[3.435s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:46:13:[m[K [01;35m[Kwarning: [m[K‘[01m[KHikFrame::m_timestamp[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.435s]    46 |     int64_t [01;35m[Km_timestamp[m[K = 0;  // milliseconds
+[3.435s]       |             [01;35m[K^~~~~~~~~~~[m[K
+[3.435s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:45:13:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kcv::Mat HikFrame::m_rgb_frame[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.435s]    45 |     cv::Mat [01;35m[Km_rgb_frame[m[K = {};
+[3.435s]       |             [01;35m[K^~~~~~~~~~~[m[K
+[3.435s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:54:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.435s]    54 |     [01;35m[KHikFrame[m[K(const HikFrame& other)
+[3.435s]       |     [01;35m[K^~~~~~~~[m[K
+[4.380s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/matchLight.cpp:[m[K In member function ‘[01m[Kvoid Armor_detector::match_light(cv::Mat, Light&, Armour&)[m[K’:
+[4.380s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/matchLight.cpp:6:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::RotatedRect>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.380s]     6 |     for( int i =0; [01;35m[Ki < l.light_rect.size()[m[K; i ++ ) {
+[4.380s]       |                    [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[4.381s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/matchLight.cpp:8:29:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::RotatedRect>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.381s]     8 |         for( int j = i+1; [01;35m[Kj < l.light_rect.size()[m[K; j ++) {
+[4.381s]       |                           [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[4.382s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/matchLight.cpp:26:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpoints[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.382s]    26 |         cv::Point2f [01;35m[Kpoints[m[K[4];
+[4.382s]       |                     [01;35m[K^~~~~~[m[K
+[4.383s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/matchLight.cpp:27:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktan1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.384s]    27 |         float [01;35m[Ktan1[m[K = abs(l.light_rect[i].center.y - l.light_rect[j].center.y) / abs(l.light_rect[i].center.x - l.light_rect[j].center.x);
+[4.384s]       |               [01;35m[K^~~~[m[K
+[4.384s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/matchLight.cpp:4:43:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kframe[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.384s]     4 | void Armor_detector::match_light( [01;35m[Kcv::Mat frame[m[K, Light &l, Armour &a) {
+[4.384s]       |                                   [01;35m[K~~~~~~~~^~~~~[m[K
+[4.462s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/show.cpp:[m[K In member function ‘[01m[Kvoid Armor_detector::show(std::string, std::shared_ptr<Armour>&, Light, int)[m[K’:
+[4.462s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/show.cpp:19:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kname[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.462s]    19 | void Armor_detector::show([01;35m[Kstd::string name[m[K,std::shared_ptr<Armour> &a_ptr,Light l,int limit) {
+[4.462s]       |                           [01;35m[K~~~~~~~~~~~~^~~~[m[K
+[6.054s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/draw.cpp:[m[K In member function ‘[01m[Kvoid Armor_detector::draw_armor(cv::Mat&, Light&, Armour&)[m[K’:
+[6.054s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/draw.cpp:12:55:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kl[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.054s]    12 | void Armor_detector::draw_armor(cv::Mat &frame,[01;35m[KLight &l[m[K,Armour &a) {
+[6.054s]       |                                                [01;35m[K~~~~~~~^[m[K
+[7.185s] [100%] [32m[1mLinking CXX shared library libarmor_pub.so[0m
+[7.308s] /usr/bin/ld: HikDriver/libhik_driver.a(HikDriver.cpp.o): warning: relocation against `_ZZNSt8__detail18__to_chars_10_implIjEEvPcjT_E8__digits' in read-only section `.text._ZNSt8__detail18__to_chars_10_implIjEEvPcjT_[_ZNSt8__detail18__to_chars_10_implIjEEvPcjT_]'
+[7.316s] /usr/bin/ld: HikDriver/libhik_driver.a(HikDriver.cpp.o): relocation R_X86_64_PC32 against symbol `_ZN9HikDriver11m_ErrorMessB5cxx11E' can not be used when making a shared object; recompile with -fPIC
+[7.316s] /usr/bin/ld: 最后的链结失败: bad value
+[7.318s] collect2: error: ld returned 1 exit status
+[7.319s] gmake[2]: *** [CMakeFiles/armor_pub.dir/build.make:477：libarmor_pub.so] 错误 1
+[7.319s] gmake[1]: *** [CMakeFiles/Makefile2:156：CMakeFiles/armor_pub.dir/all] 错误 2
+[7.319s] gmake: *** [Makefile:146：all] 错误 2
+[7.321s] Invoked command in '/home/xzq/project/armor_ws/build/armor_pub' returned '2': AMENT_PREFIX_PATH=/home/xzq/project/armor_ws/install/armor_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xzq/project/armor_ws/install/armor_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/xzq/project/armor_ws/install/armor_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/xzq/project/armor_ws/install/armor_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/xzq/project/armor_ws/build/armor_pub -- -j12 -l12

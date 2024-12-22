@@ -1,0 +1,130 @@
+[0.006s] Invoking command in '/home/xzq/project/armor_ws/build/rm': /usr/bin/cmake /home/xzq/project/armor_ws/src -DCMAKE_INSTALL_PREFIX=/home/xzq/project/armor_ws/install/rm
+[0.045s] -- The C compiler identification is GNU 12.3.0
+[0.082s] -- The CXX compiler identification is GNU 11.4.0
+[0.087s] -- Detecting C compiler ABI info
+[0.138s] -- Detecting C compiler ABI info - done
+[0.142s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.142s] -- Detecting C compile features
+[0.143s] -- Detecting C compile features - done
+[0.144s] -- Detecting CXX compiler ABI info
+[0.198s] -- Detecting CXX compiler ABI info - done
+[0.203s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.203s] -- Detecting CXX compile features
+[0.203s] -- Detecting CXX compile features - done
+[0.204s] [0m-- CMAKE_BUILD_TYPE: Release[0m
+[0.204s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.296s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.346s] -- Looking for pthread.h
+[0.394s] -- Looking for pthread.h - found
+[0.394s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.444s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.445s] -- Found Threads: TRUE  
+[0.452s] -- Found OpenCV: /usr (found version "4.5.4") 
+[0.512s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.514s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.518s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.524s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.532s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.554s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.555s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.609s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.625s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.650s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.792s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.792s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.793s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.811s] [0m-- CMAKE_BUILD_TYPE: Release[0m
+[0.811s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.945s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.946s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.949s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.955s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.962s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.980s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.981s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.040s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.161s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.162s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.174s] -- Configuring done
+[1.198s] -- Generating done
+[1.215s] -- Build files have been written to: /home/xzq/project/armor_ws/build/rm
+[1.229s] Invoked command in '/home/xzq/project/armor_ws/build/rm' returned '0': /usr/bin/cmake /home/xzq/project/armor_ws/src -DCMAKE_INSTALL_PREFIX=/home/xzq/project/armor_ws/install/rm
+[1.230s] Invoking command in '/home/xzq/project/armor_ws/build/rm': /usr/bin/cmake --build /home/xzq/project/armor_ws/build/rm -- -j12 -l12
+[1.269s] [ 22%] [32mBuilding CXX object detectArmor/HikDriver/CMakeFiles/hik_driver.dir/src/HikDriver.cpp.o[0m
+[1.269s] [ 22%] [32mBuilding CXX object detectArmor/CMakeFiles/armor_pub.dir/src/armor_detector/matchArmor.cpp.o[0m
+[1.269s] [ 22%] [32mBuilding CXX object detectArmor/CMakeFiles/armor_pub.dir/src/Armor/Armor.cpp.o[0m
+[1.269s] [ 22%] [32mBuilding CXX object detectArmor/CMakeFiles/armor_pub.dir/src/armor_detector/detectLight.cpp.o[0m
+[1.269s] [ 27%] [32mBuilding CXX object detectArmor/CMakeFiles/armor_pub_node.dir/rclcpp_components/node_main_armor_pub_node.cpp.o[0m
+[1.269s] [ 33%] [32mBuilding CXX object detectArmor/CMakeFiles/armor_pub.dir/src/armor_detector/readDealCheck.cpp.o[0m
+[1.269s] [ 38%] [32mBuilding CXX object trackerArmor/CMakeFiles/armor_sub_node.dir/rclcpp_components/node_main_armor_sub_node.cpp.o[0m
+[1.269s] [ 44%] [32mBuilding CXX object detectArmor/CMakeFiles/armor_pub.dir/src/armor_detector/draw.cpp.o[0m
+[1.270s] [ 50%] [32mBuilding CXX object trackerArmor/CMakeFiles/armor_sub.dir/src/ArmorSubNode.cpp.o[0m
+[1.271s] [ 55%] [32mBuilding CXX object detectArmor/CMakeFiles/armor_pub.dir/src/Light/Light.cpp.o[0m
+[1.271s] [ 61%] [32mBuilding CXX object detectArmor/CMakeFiles/armor_pub.dir/src/armor_detector/matchLight.cpp.o[0m
+[1.277s] [ 66%] [32mBuilding CXX object detectArmor/CMakeFiles/armor_pub.dir/src/armor_detector/show.cpp.o[0m
+[1.476s] In file included from [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/matchArmor.cpp:1[m[K:
+[1.476s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/include/detect.h:7:10:[m[K [01;31m[Kfatal error: [m[KMvCameraControl.h: 没有那个文件或目录
+[1.477s]     7 | #include [01;31m[K"MvCameraControl.h"[m[K
+[1.477s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.477s] compilation terminated.
+[1.486s] gmake[2]: *** [detectArmor/CMakeFiles/armor_pub.dir/build.make:132：detectArmor/CMakeFiles/armor_pub.dir/src/armor_detector/matchArmor.cpp.o] 错误 1
+[1.487s] gmake[2]: *** 正在等待未完成的任务....
+[1.497s] In file included from [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/detectLight.cpp:1[m[K:
+[1.497s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/include/detect.h:7:10:[m[K [01;31m[Kfatal error: [m[KMvCameraControl.h: 没有那个文件或目录
+[1.497s]     7 | #include [01;31m[K"MvCameraControl.h"[m[K
+[1.497s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.497s] compilation terminated.
+[1.499s] In file included from [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/matchLight.cpp:1[m[K:
+[1.499s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/include/detect.h:7:10:[m[K [01;31m[Kfatal error: [m[KMvCameraControl.h: 没有那个文件或目录
+[1.499s]     7 | #include [01;31m[K"MvCameraControl.h"[m[K
+[1.499s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.499s] compilation terminated.
+[1.501s] gmake[2]: *** [detectArmor/CMakeFiles/armor_pub.dir/build.make:104：detectArmor/CMakeFiles/armor_pub.dir/src/armor_detector/detectLight.cpp.o] 错误 1
+[1.502s] gmake[2]: *** [detectArmor/CMakeFiles/armor_pub.dir/build.make:146：detectArmor/CMakeFiles/armor_pub.dir/src/armor_detector/matchLight.cpp.o] 错误 1
+[1.505s] In file included from [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/Armor/Armor.cpp:1[m[K:
+[1.505s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/include/detect.h:7:10:[m[K [01;31m[Kfatal error: [m[KMvCameraControl.h: 没有那个文件或目录
+[1.505s]     7 | #include [01;31m[K"MvCameraControl.h"[m[K
+[1.506s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.507s] compilation terminated.
+[1.507s] In file included from [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/readDealCheck.cpp:1[m[K:
+[1.507s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/include/detect.h:7:10:[m[K [01;31m[Kfatal error: [m[KMvCameraControl.h: 没有那个文件或目录
+[1.507s]     7 | #include [01;31m[K"MvCameraControl.h"[m[K
+[1.507s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.507s] compilation terminated.
+[1.507s] gmake[2]: *** [detectArmor/CMakeFiles/armor_pub.dir/build.make:160：detectArmor/CMakeFiles/armor_pub.dir/src/armor_detector/readDealCheck.cpp.o] 错误 1
+[1.509s] gmake[2]: *** [detectArmor/CMakeFiles/armor_pub.dir/build.make:76：detectArmor/CMakeFiles/armor_pub.dir/src/Armor/Armor.cpp.o] 错误 1
+[1.519s] In file included from [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/Light/Light.cpp:1[m[K:
+[1.519s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/include/detect.h:7:10:[m[K [01;31m[Kfatal error: [m[KMvCameraControl.h: 没有那个文件或目录
+[1.519s]     7 | #include [01;31m[K"MvCameraControl.h"[m[K
+[1.519s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.519s] compilation terminated.
+[1.521s] In file included from [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/show.cpp:1[m[K:
+[1.521s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/include/detect.h:7:10:[m[K [01;31m[Kfatal error: [m[KMvCameraControl.h: 没有那个文件或目录
+[1.521s]     7 | #include [01;31m[K"MvCameraControl.h"[m[K
+[1.521s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.522s] compilation terminated.
+[1.522s] gmake[2]: *** [detectArmor/CMakeFiles/armor_pub.dir/build.make:90：detectArmor/CMakeFiles/armor_pub.dir/src/Light/Light.cpp.o] 错误 1
+[1.525s] gmake[2]: *** [detectArmor/CMakeFiles/armor_pub.dir/build.make:174：detectArmor/CMakeFiles/armor_pub.dir/src/armor_detector/show.cpp.o] 错误 1
+[1.564s] In file included from [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/draw.cpp:1[m[K:
+[1.564s] [01m[K/home/xzq/project/armor_ws/src/detectArmor/include/detect.h:7:10:[m[K [01;31m[Kfatal error: [m[KMvCameraControl.h: 没有那个文件或目录
+[1.564s]     7 | #include [01;31m[K"MvCameraControl.h"[m[K
+[1.564s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.564s] compilation terminated.
+[1.567s] gmake[2]: *** [detectArmor/CMakeFiles/armor_pub.dir/build.make:118：detectArmor/CMakeFiles/armor_pub.dir/src/armor_detector/draw.cpp.o] 错误 1
+[1.567s] gmake[1]: *** [CMakeFiles/Makefile2:271：detectArmor/CMakeFiles/armor_pub.dir/all] 错误 2
+[1.567s] gmake[1]: *** 正在等待未完成的任务....
+[1.583s] In file included from [01m[K/home/xzq/project/armor_ws/src/trackerArmor/src/ArmorSubNode.cpp:1[m[K:
+[1.583s] [01m[K/home/xzq/project/armor_ws/src/trackerArmor/include/ArmorSubNode.h:20:10:[m[K [01;31m[Kfatal error: [m[Karmor_interfaces/msg/armor.hpp: 没有那个文件或目录
+[1.583s]    20 | #include [01;31m[K"armor_interfaces/msg/armor.hpp"[m[K
+[1.583s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.583s] compilation terminated.
+[1.587s] gmake[2]: *** [trackerArmor/CMakeFiles/armor_sub.dir/build.make:76：trackerArmor/CMakeFiles/armor_sub.dir/src/ArmorSubNode.cpp.o] 错误 1
+[1.587s] gmake[1]: *** [CMakeFiles/Makefile2:193：trackerArmor/CMakeFiles/armor_sub.dir/all] 错误 2
+[2.672s] [ 72%] [32m[1mLinking CXX static library libhik_driver.a[0m
+[2.719s] [ 72%] Built target hik_driver
+[3.519s] [ 77%] [32m[1mLinking CXX executable armor_sub_node[0m
+[3.532s] [ 83%] [32m[1mLinking CXX executable armor_pub_node[0m
+[3.594s] [ 83%] Built target armor_sub_node
+[3.603s] [ 83%] Built target armor_pub_node
+[3.604s] gmake: *** [Makefile:136：all] 错误 2
+[3.606s] Invoked command in '/home/xzq/project/armor_ws/build/rm' returned '2': /usr/bin/cmake --build /home/xzq/project/armor_ws/build/rm -- -j12 -l12

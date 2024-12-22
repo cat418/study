@@ -1,0 +1,4 @@
+Invoking command in '/home/xzq/project/armor_ws/build/rm': /usr/bin/cmake /home/xzq/project/armor_ws/src -DCMAKE_INSTALL_PREFIX=/home/xzq/project/armor_ws/install/rm
+Invoked command in '/home/xzq/project/armor_ws/build/rm' returned '0': /usr/bin/cmake /home/xzq/project/armor_ws/src -DCMAKE_INSTALL_PREFIX=/home/xzq/project/armor_ws/install/rm
+Invoking command in '/home/xzq/project/armor_ws/build/rm': /usr/bin/cmake --build /home/xzq/project/armor_ws/build/rm -- -j12 -l12
+Invoked command in '/home/xzq/project/armor_ws/build/rm' returned '2': /usr/bin/cmake --build /home/xzq/project/armor_ws/build/rm -- -j12 -l12

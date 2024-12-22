@@ -1,0 +1,4 @@
+[0.008s] Invoking command in '/home/xzq/project/armor_ws/build/HikDriver': /usr/bin/cmake --build /home/xzq/project/armor_ws/build/HikDriver -- -j12 -l12
+[0.034s] [35m[1mConsolidate compiler generated dependencies of target hik_driver[0m
+[0.046s] [100%] Built target hik_driver
+[0.055s] Invoked command in '/home/xzq/project/armor_ws/build/HikDriver' returned '0': /usr/bin/cmake --build /home/xzq/project/armor_ws/build/HikDriver -- -j12 -l12

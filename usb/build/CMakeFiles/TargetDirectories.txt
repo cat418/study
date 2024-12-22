@@ -1,0 +1,3 @@
+/home/xzq/project/usb/build/CMakeFiles/test.dir
+/home/xzq/project/usb/build/CMakeFiles/edit_cache.dir
+/home/xzq/project/usb/build/CMakeFiles/rebuild_cache.dir

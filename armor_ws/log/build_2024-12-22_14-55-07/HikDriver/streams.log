@@ -1,0 +1,75 @@
+[0.007s] Invoking command in '/home/xzq/project/armor_ws/build/HikDriver': /usr/bin/cmake /home/xzq/project/armor_ws/src/HikDriver -DCMAKE_INSTALL_PREFIX=/home/xzq/project/armor_ws/install/HikDriver
+[0.013s] [33mCMake Warning (dev) in CMakeLists.txt:
+[0.013s]   No project() command is present.  The top-level CMakeLists.txt file must
+[0.013s]   contain a literal, direct call to the project() command.  Add a line of
+[0.013s]   code such as
+[0.013s] 
+[0.013s]     project(ProjectName)
+[0.013s] 
+[0.013s]   near the top of the file, but after cmake_minimum_required().
+[0.013s] 
+[0.014s]   CMake is pretending there is a "project(Project)" command on the first
+[0.014s]   line.
+[0.014s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.014s] [0m
+[0.050s] -- The C compiler identification is GNU 12.3.0
+[0.089s] -- The CXX compiler identification is GNU 11.4.0
+[0.094s] -- Detecting C compiler ABI info
+[0.143s] -- Detecting C compiler ABI info - done
+[0.148s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.148s] -- Detecting C compile features
+[0.148s] -- Detecting C compile features - done
+[0.150s] -- Detecting CXX compiler ABI info
+[0.206s] -- Detecting CXX compiler ABI info - done
+[0.210s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.210s] -- Detecting CXX compile features
+[0.211s] -- Detecting CXX compile features - done
+[0.212s] -- Looking for pthread.h
+[0.265s] -- Looking for pthread.h - found
+[0.265s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.317s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.318s] -- Found Threads: TRUE  
+[0.326s] -- Found OpenCV: /usr (found version "4.5.4") 
+[0.326s] [33mCMake Warning (dev) in CMakeLists.txt:
+[0.326s]   No cmake_minimum_required command is present.  A line of code such as
+[0.326s] 
+[0.327s]     cmake_minimum_required(VERSION 3.22)
+[0.327s] 
+[0.327s]   should be added at the top of the file.  The version specified may be lower
+[0.327s]   if you wish to support older CMake versions for this project.  For more
+[0.327s]   information run "cmake --help-policy CMP0000".
+[0.327s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.327s] -- Configuring done
+[0.327s] [0m
+[0.329s] [33mCMake Warning (dev) at CMakeLists.txt:7 (add_library):
+[0.329s]   Policy CMP0003 should be set before this line.  Add code such as
+[0.329s] 
+[0.329s]     if(COMMAND cmake_policy)
+[0.329s]       cmake_policy(SET CMP0003 NEW)
+[0.329s]     endif(COMMAND cmake_policy)
+[0.330s] 
+[0.330s]   as early as possible but after the most recent call to
+[0.330s]   cmake_minimum_required or cmake_policy(VERSION).  This warning appears
+[0.330s]   because target "hik_driver" links to some libraries for which the linker
+[0.330s]   must search:
+[0.330s] 
+[0.330s]     X11, MvCameraControl, -lpthread
+[0.330s] 
+[0.330s]   and other libraries with known full path:
+[0.330s] 
+[0.330s]     /usr/lib/x86_64-linux-gnu/libglog.so.0.4.0
+[0.330s] 
+[0.330s]   CMake is adding directories in the second list to the linker search path in
+[0.330s]   case they are needed to find libraries from the first list (for backwards
+[0.330s]   compatibility with CMake 2.4).  Set policy CMP0003 to OLD or NEW to enable
+[0.330s]   or disable this behavior explicitly.  Run "cmake --help-policy CMP0003" for
+[0.331s]   more information.
+[0.331s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.331s] [0m
+[0.331s] -- Generating done
+[0.331s] -- Build files have been written to: /home/xzq/project/armor_ws/build/HikDriver
+[0.333s] Invoked command in '/home/xzq/project/armor_ws/build/HikDriver' returned '0': /usr/bin/cmake /home/xzq/project/armor_ws/src/HikDriver -DCMAKE_INSTALL_PREFIX=/home/xzq/project/armor_ws/install/HikDriver
+[0.334s] Invoking command in '/home/xzq/project/armor_ws/build/HikDriver': /usr/bin/cmake --build /home/xzq/project/armor_ws/build/HikDriver -- -j12 -l12
+[0.368s] [ 50%] [32mBuilding CXX object CMakeFiles/hik_driver.dir/src/HikDriver.o[0m
+[1.588s] [100%] [32m[1mLinking CXX static library libhik_driver.a[0m
+[1.631s] [100%] Built target hik_driver

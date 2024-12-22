@@ -1,0 +1,61 @@
+[0m-- CMAKE_BUILD_TYPE: Release[0m
+[0m-- CMAKE_BUILD_TYPE: Release[0m
+In file included from [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/matchArmor.cpp:1[m[K:
+[01m[K/home/xzq/project/armor_ws/src/detectArmor/include/detect.h:7:10:[m[K [01;31m[Kfatal error: [m[KMvCameraControl.h: 没有那个文件或目录
+    7 | #include [01;31m[K"MvCameraControl.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [detectArmor/CMakeFiles/armor_pub.dir/build.make:132：detectArmor/CMakeFiles/armor_pub.dir/src/armor_detector/matchArmor.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+In file included from [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/detectLight.cpp:1[m[K:
+[01m[K/home/xzq/project/armor_ws/src/detectArmor/include/detect.h:7:10:[m[K [01;31m[Kfatal error: [m[KMvCameraControl.h: 没有那个文件或目录
+    7 | #include [01;31m[K"MvCameraControl.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/matchLight.cpp:1[m[K:
+[01m[K/home/xzq/project/armor_ws/src/detectArmor/include/detect.h:7:10:[m[K [01;31m[Kfatal error: [m[KMvCameraControl.h: 没有那个文件或目录
+    7 | #include [01;31m[K"MvCameraControl.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [detectArmor/CMakeFiles/armor_pub.dir/build.make:104：detectArmor/CMakeFiles/armor_pub.dir/src/armor_detector/detectLight.cpp.o] 错误 1
+gmake[2]: *** [detectArmor/CMakeFiles/armor_pub.dir/build.make:146：detectArmor/CMakeFiles/armor_pub.dir/src/armor_detector/matchLight.cpp.o] 错误 1
+In file included from [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/Armor/Armor.cpp:1[m[K:
+[01m[K/home/xzq/project/armor_ws/src/detectArmor/include/detect.h:7:10:[m[K [01;31m[Kfatal error: [m[KMvCameraControl.h: 没有那个文件或目录
+    7 | #include [01;31m[K"MvCameraControl.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/readDealCheck.cpp:1[m[K:
+[01m[K/home/xzq/project/armor_ws/src/detectArmor/include/detect.h:7:10:[m[K [01;31m[Kfatal error: [m[KMvCameraControl.h: 没有那个文件或目录
+    7 | #include [01;31m[K"MvCameraControl.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [detectArmor/CMakeFiles/armor_pub.dir/build.make:160：detectArmor/CMakeFiles/armor_pub.dir/src/armor_detector/readDealCheck.cpp.o] 错误 1
+gmake[2]: *** [detectArmor/CMakeFiles/armor_pub.dir/build.make:76：detectArmor/CMakeFiles/armor_pub.dir/src/Armor/Armor.cpp.o] 错误 1
+In file included from [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/Light/Light.cpp:1[m[K:
+[01m[K/home/xzq/project/armor_ws/src/detectArmor/include/detect.h:7:10:[m[K [01;31m[Kfatal error: [m[KMvCameraControl.h: 没有那个文件或目录
+    7 | #include [01;31m[K"MvCameraControl.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/show.cpp:1[m[K:
+[01m[K/home/xzq/project/armor_ws/src/detectArmor/include/detect.h:7:10:[m[K [01;31m[Kfatal error: [m[KMvCameraControl.h: 没有那个文件或目录
+    7 | #include [01;31m[K"MvCameraControl.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [detectArmor/CMakeFiles/armor_pub.dir/build.make:90：detectArmor/CMakeFiles/armor_pub.dir/src/Light/Light.cpp.o] 错误 1
+gmake[2]: *** [detectArmor/CMakeFiles/armor_pub.dir/build.make:174：detectArmor/CMakeFiles/armor_pub.dir/src/armor_detector/show.cpp.o] 错误 1
+In file included from [01m[K/home/xzq/project/armor_ws/src/detectArmor/src/armor_detector/draw.cpp:1[m[K:
+[01m[K/home/xzq/project/armor_ws/src/detectArmor/include/detect.h:7:10:[m[K [01;31m[Kfatal error: [m[KMvCameraControl.h: 没有那个文件或目录
+    7 | #include [01;31m[K"MvCameraControl.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [detectArmor/CMakeFiles/armor_pub.dir/build.make:118：detectArmor/CMakeFiles/armor_pub.dir/src/armor_detector/draw.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:271：detectArmor/CMakeFiles/armor_pub.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+In file included from [01m[K/home/xzq/project/armor_ws/src/trackerArmor/src/ArmorSubNode.cpp:1[m[K:
+[01m[K/home/xzq/project/armor_ws/src/trackerArmor/include/ArmorSubNode.h:20:10:[m[K [01;31m[Kfatal error: [m[Karmor_interfaces/msg/armor.hpp: 没有那个文件或目录
+   20 | #include [01;31m[K"armor_interfaces/msg/armor.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [trackerArmor/CMakeFiles/armor_sub.dir/build.make:76：trackerArmor/CMakeFiles/armor_sub.dir/src/ArmorSubNode.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:193：trackerArmor/CMakeFiles/armor_sub.dir/all] 错误 2
+gmake: *** [Makefile:136：all] 错误 2

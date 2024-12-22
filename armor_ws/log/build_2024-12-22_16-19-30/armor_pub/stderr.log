@@ -1,0 +1,23 @@
+[0m-- CMAKE_BUILD_TYPE: Release[0m
+[31mCMake Error at /opt/ros/humble/share/ament_cmake_auto/cmake/ament_auto_add_library.cmake:66 (add_library):
+  Target "armor_pub" links to target "fmt::fma" but the target was not found.
+  Perhaps a find_package() call is missing for an IMPORTED target, or an
+  ALIAS target is missing?
+Call Stack (most recent call first):
+  CMakeLists.txt:29 (ament_auto_add_library)
+
+[0m
+[31mCMake Error at HikDriver/CMakeLists.txt:7 (add_library):
+  Target "hik_driver" links to target "fmt::fma" but the target was not
+  found.  Perhaps a find_package() call is missing for an IMPORTED target, or
+  an ALIAS target is missing?
+
+[0m
+[31mCMake Error at HikDriver/CMakeLists.txt:7 (add_library):
+  Target "hik_driver" links to target "fmt::fma" but the target was not
+  found.  Perhaps a find_package() call is missing for an IMPORTED target, or
+  an ALIAS target is missing?
+
+[0m
+[0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+gmake: *** [Makefile:538：cmake_check_build_system] 错误 1

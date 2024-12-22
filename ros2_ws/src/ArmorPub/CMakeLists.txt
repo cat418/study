@@ -5,11 +5,14 @@ add_compile_options(-Wall -Wextra -Wpedantic)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+#检查是否设置了构建类型 如果没有设置，默认值将设置为Release
 if (NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Release)
 endif()
+#打印当前的构建类型
 message("-- CMAKE_BUILD_TYPE: ${CMAKE_BUILD_TYPE}")
 
+#设置ROS2 cv_bridge库的查找路径
 set(CMAKE_PREFIX_PATH /opt/ros/humble/share/cv_bridge/cmake)  
 set(CMAKE_PREFIX_PATH /usr/local/runtime/cmake)
 find_package(ament_cmake_auto REQUIRED)

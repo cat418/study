@@ -1,4 +1,4 @@
 # ninja log v5
-3103	3136	1734086906696313253	HikDriver/libhik_driver.a	1f183cfbdd4018ff
-3	2797	1734088157748234987	HikDriver/CMakeFiles/hik_driver.dir/src/HikDriver.cpp.o	bb3dbfa2fa3ccc7e
 0	4	0	clean	a31eedcededa8236
+3	2797	1734088157748234987	HikDriver/CMakeFiles/hik_driver.dir/src/HikDriver.cpp.o	bb3dbfa2fa3ccc7e
+3103	3136	1734086906696313253	HikDriver/libhik_driver.a	1f183cfbdd4018ff

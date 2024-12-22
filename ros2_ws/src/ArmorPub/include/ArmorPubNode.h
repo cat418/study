@@ -15,6 +15,7 @@
 //自定义消息类型
 #include "armor_interfaces/msg/armor.hpp"
 
+//节点类
 class ArmorPubNode : public rclcpp::Node{
 public:
     ArmorPubNode(const rclcpp::NodeOptions &options);
