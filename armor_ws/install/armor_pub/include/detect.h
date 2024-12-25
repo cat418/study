@@ -69,7 +69,7 @@ public:
     //绘制
     void draw_armor(cv::Mat &frame,Light &l,Armour &a);
     //展示
-    void show(std::string name,std::shared_ptr<Armour> &a_ptr,Light l,int limit);
+    void show( std::shared_ptr<Armour> &a_ptr,Light l,int limit);
 private:
     cv::VideoCapture m_cap;
 };
@@ -95,6 +95,7 @@ private:
     //发布消息
     rclcpp::Publisher<armor_interfaces::msg::Armor>::SharedPtr m_armors_publish;
     //线程对象
+    std::thread m_push_core;
     std::thread m_detect_core;
     //管理Armour的智能指针
     std::shared_ptr<Armour> a_ptr;

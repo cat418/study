@@ -1,7 +1,0 @@
-[01m[K/home/xzq/project/ros2_ws/src/ArmorPub/src/ArmorPubNode.cpp:1:10:[m[K [01;31m[Kfatal error: [m[KArmorPubNode.h: 没有那个文件或目录
-    1 | #include [01;31m[K"ArmorPubNode.h"[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/talker.dir/build.make:76：CMakeFiles/talker.dir/src/ArmorPubNode.cpp.o] 错误 1
-gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/talker.dir/all] 错误 2
-gmake: *** [Makefile:146：all] 错误 2

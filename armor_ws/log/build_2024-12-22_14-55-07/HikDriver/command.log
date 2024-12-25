@@ -1,3 +1,0 @@
-Invoking command in '/home/xzq/project/armor_ws/build/HikDriver': /usr/bin/cmake /home/xzq/project/armor_ws/src/HikDriver -DCMAKE_INSTALL_PREFIX=/home/xzq/project/armor_ws/install/HikDriver
-Invoked command in '/home/xzq/project/armor_ws/build/HikDriver' returned '0': /usr/bin/cmake /home/xzq/project/armor_ws/src/HikDriver -DCMAKE_INSTALL_PREFIX=/home/xzq/project/armor_ws/install/HikDriver
-Invoking command in '/home/xzq/project/armor_ws/build/HikDriver': /usr/bin/cmake --build /home/xzq/project/armor_ws/build/HikDriver -- -j12 -l12

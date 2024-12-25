@@ -12,6 +12,8 @@ void ArmorSubNode::subArmorsCallback(const armor_interfaces::msg::Armor::SharedP
     }
     std::cout << "pose :" << "("<<armors_msg->pose.position.x << "," << armors_msg->pose.position.y << "," << armors_msg->pose.position.z << ")" << std::endl;
     std::cout << "      " << "("<<armors_msg->pose.orientation.x << "," << armors_msg->pose.orientation.y << "," << armors_msg->pose.orientation.z << "," << armors_msg->pose.orientation.w << ")" << std::endl;
+
+    std::cout << "颜色:" <<armors_msg->color<< std::endl;
 }
 
 #include <rclcpp_components/register_node_macro.hpp>

@@ -11,7 +11,7 @@
 #define HIKDRIVER_HIKDRIVER_H
 
 #include <cstring>
-#include <unistd.h>
+#include <unistd.h>//包含unix系统调用函数
 
 #include <string>
 #include <map>
@@ -21,6 +21,7 @@
 #include <MvCameraControl.h>
 #include <opencv2/opencv.hpp>
 
+//枚举类 定义多种触发源类型 表示触发相机拍照的方式
 enum class TriggerSource {
     Line0,
     Line1,
@@ -30,37 +31,44 @@ enum class TriggerSource {
     Software = 7,
     FrequencyConverter
 };
-
+//储存相机的基本信息
 struct DriverInfo {
-    std::string name;
-    std::string type;
-    std::string ip;
+    std::string name;//名称
+    std::string type;//类型
+    std::string ip;//ip地址
 };
 
 class HikDriver;
 
+//从海康相机获取的一帧图像数据
 class HikFrame {
     friend class HikDriver;
 private:
-    cv::Mat m_rgb_frame = {};
-    int64_t m_timestamp = 0;  // milliseconds
+    cv::Mat m_rgb_frame = {};//存储图像数据
+    int64_t m_timestamp = 0;  // 时间戳 毫秒
 public:
+    //默认构造函数
     HikFrame() =default;
 
+    //构造函数 接受：Mat int64_t两个参数
     HikFrame(const cv::Mat& frame, const int64_t& timestamp)
             : m_rgb_frame(frame.clone()),
               m_timestamp(timestamp) {}
 
+    //拷贝构造
     HikFrame(const HikFrame& other)
             : m_timestamp(other.m_timestamp),
               m_rgb_frame(other.m_rgb_frame.clone()) {}
 
+    //移动构造
     HikFrame(HikFrame&& other) noexcept
             : m_rgb_frame(std::move(other.m_rgb_frame)),
               m_timestamp(other.m_timestamp) {}
 
+    //析构函数
     ~HikFrame() =default;
 
+    //拷贝赋值操作符
     HikFrame& operator=(const HikFrame& other) {
         if (this != &other) {
             m_timestamp = other.m_timestamp;
@@ -69,6 +77,7 @@ public:
         return *this;
     }
 
+    //移动赋值操作符
     HikFrame& operator=(HikFrame&& other) noexcept {
         if (this != &other) {
             m_timestamp = other.m_timestamp;
@@ -77,28 +86,32 @@ public:
         return *this;
     }
 
-    // [[nodiscard]] 表示返回值不可忽略
+    // [[nodiscard]]c++17属性 表示返回值不可忽略
+    //inline（内联函数）表示小的频繁调用的函数
+    //该函数返回一个指向m_rgb_frame的指针
     [[nodiscard]] inline const cv::Mat* getRgbFrame() const { return &m_rgb_frame; }
-
+    //const表示该函数不会修改类的任何成员变量 保证他是一个只读操作 函数返回一个时间戳 表示图像的捕获时间
     [[nodiscard]] inline int64_t getTimestamp() const { return m_timestamp; }
-
+    //判断图像数据是否有效
     bool empty() const { return m_rgb_frame.empty(); }
 };
 
 class HikDriver {
 public:
     template<typename T>
+    //模版结构体 意味着ParamInfo可以存储任意类型的数据
     struct ParamInfo {
-        T current;
-        T min;
-        T max;
- 
+        T current;//当前参数
+        T min;//参数的最小值
+        T max;//参数的最大值
+        //构造函数 接受一个MVCC_FLOATVALUE类型的引用p作为参数 初始化成员变量
+        //explicit该函数不能隐式调用 必须显示的指定
         explicit ParamInfo(MVCC_FLOATVALUE & p) {
             current = p.fCurValue;
             min = p.fMin;
             max = p.fMax;
         }
-
+        //const 表示该函数不会改变成员变量的值和状态 因此可以安全的在常亮对象上调用
         [[nodiscard]] std::string toString() const {
             std::string info;
             info = "current: " + std::to_string(current) +
@@ -121,7 +134,9 @@ public:
      * @param index 相机索引
      * @param trigger 触发源
      */
+    //构造函数 初始化HikDriver对象
     HikDriver(int index, const TriggerSource& trigger);
+    //析构函数 销毁HikDriver对象
     ~HikDriver();
 
     /**
@@ -154,6 +169,7 @@ public:
      * @return success | failed
      */
     bool connectDriver(const int& index);
+    //TriggerSource 枚举类型定义相机触发操作的不同来源
     bool connectDriver(const int& index, const TriggerSource& trigger);
 
     /**

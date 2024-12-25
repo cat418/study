@@ -1,2 +1,0 @@
-Invoking command in '/home/xzq/project/armor_ws/build/HikDriver': /usr/bin/cmake --build /home/xzq/project/armor_ws/build/HikDriver -- -j12 -l12
-Invoked command in '/home/xzq/project/armor_ws/build/HikDriver' returned '0': /usr/bin/cmake --build /home/xzq/project/armor_ws/build/HikDriver -- -j12 -l12

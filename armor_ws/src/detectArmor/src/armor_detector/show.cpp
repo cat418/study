@@ -2,8 +2,16 @@
 #include "pnpslover.h"
 #include "MvCameraControl.h"
 #include "HikDriver/HikDriver.h"
+
 Armour a;
-void test( const std::string &name,float light_height,float armor_width,float armor_height,float limit) {
+std::mutex data_mutex;
+std::mutex init_mutex;
+bool data_ready = false;
+bool is_pushData = false;
+std::condition_variable data_condition;
+std::condition_variable pushData_condition;
+
+void test( float light_height,float armor_width,float armor_height,float limit) {
  
     a.m_width=armor_width;
     a.m_height=armor_height;
@@ -12,11 +20,11 @@ void test( const std::string &name,float light_height,float armor_width,float ar
 
     std::shared_ptr<Armour> a_ptr = std::make_shared<Armour>(a);
     Armor_detector ArmorDetector;
-    ArmorDetector.show(name,a_ptr,l,limit);
+    ArmorDetector.show( a_ptr,l,limit);
 }
 
 //展示
-void Armor_detector::show(std::string name,std::shared_ptr<Armour> &a_ptr,Light l,int limit) {
+void Armor_detector::show( std::shared_ptr<Armour> &a_ptr,Light l,int limit) {
 
     HikDriver hik_driver(0);
     if (hik_driver.isConnected()) {
@@ -28,7 +36,7 @@ void Armor_detector::show(std::string name,std::shared_ptr<Armour> &a_ptr,Light 
         hik_driver.showParamInfo();
         hik_driver.startReadThread();
     }
-    while(true) {
+    while(rclcpp::ok()) {
         l.light_rect.clear();
         a_ptr->two_Light.clear();
         HikFrame Frame = hik_driver.getFrame();
@@ -56,9 +64,24 @@ void Armor_detector::show(std::string name,std::shared_ptr<Armour> &a_ptr,Light 
         cv::imshow("armor",img);
         //解pnp
         PnpSlover pnp;
-        pnp.calculate_pnp( a, l);
-        a_ptr->four_point.clear();
+        pnp.calculate_pnp( *a_ptr, l);
+
+        {
+            std::unique_lock<std::mutex> lock(data_mutex);
+            a = *a_ptr;
+            data_ready = true;
+            data_condition.notify_all();
         }
+
+        }
+
+        {
+            std::unique_lock<std::mutex> lock(init_mutex);
+            pushData_condition.wait(lock,[]{ return is_pushData ; });
+            a.four_point.clear();
+            is_pushData = false;
+        }
+            a_ptr->four_point.clear();
         cv::waitKey(30);
     }
     //停止取流线程并释放资源
@@ -76,22 +99,24 @@ ArmorPubNode::ArmorPubNode(const rclcpp::NodeOptions &options) :
     //创建消息发布器
     //rclcpp::SensorDataQoS() 表示使用传感器数据的质量服务（QoS）。该QoS设置有助于确保图像数据等高频传输的数据在网络拥堵时也能保证合适的传输性能。
     m_armors_publish = this->create_publisher<armor_interfaces::msg::Armor>("/armor",rclcpp::SensorDataQoS());
-    m_detect_core = std::thread([this]()->void {
-        //启动一个线程
-        armor_interfaces::msg::Armor armor_msg;
-         /**
-        *param: 路径 灯条 高 装甲板宽 装甲板高 二值化阈值 
-        */
-        //test("1.avi",6,13.5,10,80);
-        //test("2.avi",6,13.5,10,200);
-        //test("3.avi",6,13.5,10,250);
-        test("4.mp4",5.5,13.04,12,150);
-        //test("5.mp4",6,13.5,10,150);
-        //test("6.mp4",6,13.5,10,150);
-        while (rclcpp::ok()) {
-            armor_msg.number = 10;
-            armor_msg.color = "Blue" ;
 
+    m_detect_core = std::thread([this]()->void{
+         test( 5.5,13.04,12,150);
+    });
+   
+    m_push_core = std::thread([this]()->void {
+        {
+            //确保show先抢到锁的使用权 防止访问无效数据
+            std::unique_lock<std::mutex> lock(data_mutex);
+            data_condition.wait(lock, []{ return data_ready; });//获得锁的条件
+        }
+        //启动一个线程 休眠30ms保证获取数据的线程先运行
+        armor_interfaces::msg::Armor armor_msg;
+        while (rclcpp::ok()) {
+            {
+            std::unique_lock<std::mutex> lock(data_mutex); 
+            data_condition.wait(lock,[]{ return data_ready; } );
+            armor_msg.color = "Blue" ;
             //四元数
             armor_msg.pose.orientation.x = a.orientation[0];
             armor_msg.pose.orientation.y = a.orientation[1];
@@ -106,9 +131,13 @@ ArmorPubNode::ArmorPubNode(const rclcpp::NodeOptions &options) :
                 armor_msg.apexs[i].x= a.four_point[i].x;
                 armor_msg.apexs[i].y=a.four_point[i].y;
                 armor_msg.apexs[i].z=0.0f;
-            }
+            } 
             //发布更新的消息
             m_armors_publish->publish(armor_msg);
+            data_ready = false;//重置标志
+            is_pushData = true;
+            pushData_condition.notify_all();
+            }
         }
     });
 }

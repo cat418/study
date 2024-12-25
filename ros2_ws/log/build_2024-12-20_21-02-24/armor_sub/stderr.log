@@ -1,6 +1,0 @@
-[0m-- CMAKE_BUILD_TYPE: Release[0m
-[31mCMake Error at cmake_install.cmake:101 (file):
-  file INSTALL cannot find "/home/xzq/project/ros2_ws/src/ArmorSub/launch":
-  No such file or directory.
-
-[0m
